@@ -1,0 +1,670 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+main {
+    height: 0px;
+}
+
+/*Mobile*/
+@media screen and (max-width: 500px) {
+    /*Header*/
+    .head-contain {
+        position: fixed;
+        z-index: 100;
+        background: white;
+        width: 100%;
+        height: 10vh;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-contain {
+        display: inline-block;
+        margin: 2vw;
+        padding-left: 2vw;
+    }
+
+    .logo {
+        font-size: 4.5vw;
+        font-family: 'Shadows Into Light', serif;
+        border: 2px solid black;
+        padding: .75vw;
+        margin: 0;
+    }
+
+    .logo br {
+        display: none;
+    }
+    
+    nav {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        background: white;
+        padding-top: 8vh;
+        border-bottom: 2px solid black
+    }
+
+    nav a {
+        width: 100%;
+        font-size: 8vw;
+        font-family: 'PT Serif', serif;
+        line-height: 5vh;
+        text-align: center;
+        text-decoration: none;
+        padding: 1vw;
+        display: block;
+        color: black;
+    }
+    
+    .fa,
+    .fas,
+    .fa-bars,
+    .fas-times {
+        color: black;
+        font-size: 8vw;
+        margin: 2vw;
+        padding-right: 2vw;
+        z-index: 3;
+    }
+    
+    /*------*/
+
+    /*SlideShow*/
+    /* Hide the images by default */
+    .slides {
+        display: none;
+        margin-bottom: -.5vh;
+        width: 100%;
+    }
+    
+    .slideshow-container img {
+        width: 100%;
+        height: 94vh;
+        margin-top: auto;
+        margin-bottom: -1px;
+    }
+    /*-------*/
+    
+    /*Dine In Section*/
+    .dine-in {
+        background-image: url(https://cdn-image.foodandwine.com/sites/default/files/1509031600/arugua-and-squash-salad-XL-RECIPE1217.jpg);
+        width: 100%;
+        height: 30vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dine-in h1 {
+        color: white;
+        border: 2px solid white;
+        text-align: center;
+        padding: 2vw;
+        font-size: 8vw;
+        font-family: 'PT Serif', serif;
+        text-shadow: 1px 2px black;
+    }
+    
+    .dine-info {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 40vh;
+        background: beige;
+    }
+    
+    .dine-info p { 
+        font-size: 5vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    /*----------*/
+    /*Cater Section*/
+    .cater {
+        background-image: url(https://static1.squarespace.com/static/5319e7a7e4b0ee73efefb8ed/t/538fd617e4b06d663cf6e8b1/1434558163094/Catering+copy.jpg?format=1500w);
+        width: 100%;
+        height: 30vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cater h1 {
+        color: white;
+        border: 2px solid white;
+        text-align: center;
+        padding: 2vw;
+        font-size: 10vw;
+        font-family: 'PT Serif', serif;
+        text-shadow: 1px 2px black;
+    }
+    
+    .cater-info {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 40vh;
+        background: beige;
+    }
+    
+    .cater-info p {
+        font-size: 5vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    /*----------*/
+    
+    /*Footer Section*/
+    .footer {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        border-top: 3px solid black;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        background: white;
+    }
+    
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .social a {
+        color: black;
+        background: transparent;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 15px;
+        font-size: 8vw;
+    }
+    
+    .footer p {
+        display: none;
+    }
+    
+    .buffer {
+        width: 100%;
+        height: 8vh;
+    }
+}
+    /*------*/
+
+/*Tablet*/
+@media screen and (min-width: 501px) {
+    /*Header*/
+    .head-contain {
+        position: fixed;
+        z-index: 100;
+        background: white;
+        width: 100%;
+        height: 10vh;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-contain {
+        display: inline-block;
+        margin: 2vw;
+        padding-left: 2vw;
+    }
+
+    .logo {
+        font-size: 25px;
+        font-family: 'Shadows Into Light', serif;
+        border: 2px solid black;
+        padding: .75vw;
+        margin: 0;
+    }
+
+    .logo br {
+        display: none;
+    }
+    
+    nav {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        background: white;
+        padding-top: 13vh;
+        border-bottom: 2px solid black;
+    }
+
+    nav a {
+        width: 100%;
+        font-size: 6vw;
+        font-family: 'PT Serif', serif;
+        line-height: 5vh;
+        text-align: center;
+        text-decoration: none;
+        padding: 1vw;
+        display: block;
+        color: black;
+    }
+    
+    .fa,
+    .fas,
+    .fa-bars,
+    .fas-times {
+        color: black;
+        font-size: 45px;
+        margin: 2vw;
+        padding-right: 2vw;
+        z-index: 3;
+    } 
+    /*------*/
+
+    /*SlideShow*/
+    /* Hide the images by default */
+    .slides {
+        display: none;
+        margin-bottom: -.5vh;
+        width: 100%;
+    }
+    
+    .slideshow-container img {
+        width: 100%;
+        height: 94vh;
+        margin-top: auto;
+        margin-bottom: -1px;
+    }
+    /*-------*/
+    
+    /*Dine In Section*/
+    .dine-in {
+        background-image: url(https://cdn-image.foodandwine.com/sites/default/files/1509031600/arugua-and-squash-salad-XL-RECIPE1217.jpg);
+        width: 59.5%;
+        float: left;
+        height: 30vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-right: 1.5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dine-in h1 {
+        color: white;
+        border: 2px solid white;
+        text-align: center;
+        padding: 2vw;
+        font-size: 4vw;
+        font-family: 'PT Serif', serif;
+        text-shadow: 1px 2px black;
+    }
+    
+    .dine-info {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 30vh;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-left: 1.5px solid black;
+        background: beige;
+    }
+    
+    .dine-info p { 
+        font-size: 2.5vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    /*----------*/
+    /*Cater Section*/
+    .cater {
+        background-image: url(https://static1.squarespace.com/static/5319e7a7e4b0ee73efefb8ed/t/538fd617e4b06d663cf6e8b1/1434558163094/Catering+copy.jpg?format=1500w);
+        width: 59.5%;
+        float: right;
+        height: 30vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-left: 1.5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cater h1 {
+        color: white;
+        border: 2px solid white;
+        text-align: center;
+        padding: 2vw;
+        font-size: 6vw;
+        font-family: 'PT Serif', serif;
+        text-shadow: 1px 2px black;
+    }
+    
+    .cater-info {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 30vh;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-right: 1.5px solid black;
+        background: beige;
+    }
+    
+    .cater-info p {
+        font-size: 2.5vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    /*----------*/
+    
+    /*Footer*/
+    .footer {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-top: 3px solid black;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        background: white;
+    }
+    
+    .social {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 30%;
+    }
+    
+    .social a {
+        color: black;
+        background: transparent;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 10px;
+        font-size: 5vw;
+    }
+    
+    .fa-facebook-f {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+    .footer p {
+        display: flex;
+        font-size: 2.5vw;
+    }
+    
+    .buffer {
+        width: 100%;
+        height: 8vh;
+    }
+}
+    /*------*/
+
+/*Desktop*/
+@media screen and (min-width: 1001px) {
+    /*Header*/
+    .head-contain {
+        position: fixed;
+        z-index: 100;
+        background: white;
+        width: 100%;
+        height: 10vh;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-contain {
+        display: inline-block;
+        margin: 2vw;
+        padding-left: 2vw;
+    }
+
+    .logo {
+        font-size: 1.5vw;
+        font-family: 'Shadows Into Light', serif;
+        border: 2px solid black;
+        padding: .75vw;
+        margin: 0;
+        background: white;
+    }
+
+    .logo br {
+        display: none;
+    }
+    
+    nav {
+        display: flex;
+        float: right;
+        position: relative;
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        background: transparent;
+        padding: 0vh;
+        border-bottom: 0px solid transparent;
+        padding-right: 2vw;
+    }
+
+    nav a {
+        width: auto;
+        font-size: 1.5vw;
+        font-family: 'PT Serif', serif;
+        text-align: center;
+        text-decoration: none;
+        padding: 1vw;
+        color: black;
+    }
+    
+    .fa,
+    .fas,
+    .fa-bars,
+    .fas-times {
+        display: none;
+    }
+    /*------*/
+
+    /*SlideShow*/
+    /* Hide the images by default */
+    .slides {
+        display: none;
+        margin-bottom: -.5vh;
+        width: 100%;
+    }
+    
+    .slideshow-container img {
+        width: 100%;
+        height: 92vh;
+        margin-top: auto;
+        margin-bottom: -1px;
+    }
+    /*-------*/
+    
+    /*Dine In Section*/
+    .dine-in {
+        background-image: url(https://cdn-image.foodandwine.com/sites/default/files/1509031600/arugua-and-squash-salad-XL-RECIPE1217.jpg);
+        width: 59.5%;
+        float: left;
+        height: 60vh;
+        position: relative;
+        top: -15vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-right: 1.5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dine-in h1 {
+        color: white;
+        border: 3px solid white;
+        text-align: center;
+        padding: 2vw;
+        font-size: 4vw;
+        font-family: 'PT Serif', serif;
+        text-shadow: 1px 2px black;
+    }
+    
+    .dine-info {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height: 35vh;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-left: 1.5px solid black;
+        background: beige;
+    }
+    
+    .dine-info p { 
+        font-size: 2vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    /*----------*/
+    /*Cater Section*/
+    .cater {
+        background-image: url(https://static1.squarespace.com/static/5319e7a7e4b0ee73efefb8ed/t/538fd617e4b06d663cf6e8b1/1434558163094/Catering+copy.jpg?format=1500w);
+        width: 59.5%;
+        float: right;
+        height: 55vh;
+        position: relative;
+        top: -25vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-left: 1.5px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cater h1 {
+        color: white;
+        border: 3px solid white;
+        text-align: center;
+        padding: 2vw;
+        font-size: 6vw;
+        font-family: 'PT Serif', serif;
+        text-shadow: 1px 2px black;
+        margin-top: -6vh;
+    }
+    
+    .cater-info {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        top: -15vh;
+        height: 45vh;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-right: 1.5px solid black;
+        background: beige;
+    }
+    
+    .cater-info p {
+        font-size: 2vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-top: -8vh;
+    }
+    /*----------*/
+    /*Footer Section*/
+    .footer {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-top: 3px solid black;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        background: white;
+    }
+    
+    .social {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 30%;
+    }
+    
+    .social a {
+        color: black;
+        background: transparent;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 15px;
+        font-size: 2vw;
+    }
+    
+    .social a:hover {
+        transform: scale(1.1);
+    }
+    
+    .footer p {
+        display: flex;
+        font-size: 1.5vw;
+    }
+    
+    .buffer {
+        width: 100%;
+        height: 0;
+    }
+}
+    /*------*/
+}

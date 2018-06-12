@@ -1,0 +1,698 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige;
+}
+
+/*----------*/
+
+/*About Image Section*/
+.about-image {
+    background-image: url("http://www.mbbmanagement.com/wp-content/uploads/2017/06/9-ways-to-make-your-restaurant-kitchen-run-more-efficiently.jpg");
+    height: 92vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    position: relative;
+    z-index: 1;
+}
+
+.backdrop-about {
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    height: 92vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.about-image h1 {
+    font-size: 6vw;
+    font-family: 'PT + Serif', serif;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 35vw;
+    position: relative;
+    z-index: 3;
+}
+/*--------------*/
+
+/*Main Info Contain*/
+.info-contain {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+/*----------------*/
+
+/*Restaurant Contain*/
+.restaurant-contain {
+    text-align: center;
+    padding-bottom: 5vw;
+}
+
+.restaurant-contain h1 {
+    font-size: 3vw;
+    font-family: 'PT + Serif', serif;
+    padding-bottom: 1vw;
+}
+
+.restaurant-contain p {
+    padding: 1vw;
+    width: 70%;
+    margin: auto;
+}
+
+.quote {
+    font-style: italic;
+    padding: 1vw;
+    line-height: 2.5vw;
+}
+
+.quote span {
+    font-style: normal;
+}
+/*-----------------*/
+
+/*Team Section*/
+.team-title {
+    text-align: center;
+    font-size: 3vw;
+    padding-bottom: 3vw;
+}
+
+.headshots {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.headshots img {
+    height: 35vw;
+    width: 25vw;
+    border: 2px solid black;
+}
+
+.headshots h1 {
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'PT + Serif', serif;
+}
+
+.headshots h2 {
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'PT + Serif', serif;
+}
+/*-------------*/
+
+/*Image Top Section*/
+.image-contain {
+    text-align: center;
+    padding: 2vw;
+}
+
+.image-contain img {
+    width: 13vw;
+    height: 13vw;
+    margin: 1vw;
+    border: 1px solid black;
+}
+/*--------------*/
+
+/*Apply Section*/
+.apply {
+    padding: 4vw;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.apply p {
+    padding: 1vw;
+}
+
+.apply button {
+    padding: .25vw .5vw;
+    color: black;
+    background-color: beige;
+    font-size: 1.25vw;
+    cursor: pointer;
+}
+/*------------*/
+
+/*Community*/
+.community {
+    position: relative;
+    z-index: 1;
+    background-image: url("https://images8.alphacoders.com/370/370799.jpg");
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 2px solid black;
+}
+
+.backdrop-community {
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    z-index: 2;
+    height: 40vh;
+    width: 100%;
+}
+
+.community h1,
+.community p,
+.community span {
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.community h1 {
+    font-size: 3vw;
+    font-family: 'PT + Serif', serif;
+    text-shadow: 2px 2px black;
+    padding: 1vw;
+}
+
+.community p {
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+.community span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*---------*/
+
+
+/*Mobile*/
+@media screen and (max-width: 500px) {
+    /*Header*/
+    .head-contain {
+        position: fixed;
+        z-index: 100;
+        background: white;
+        width: 100%;
+        height: 10vh;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-contain {
+        display: inline-block;
+        margin: 2vw;
+        padding-left: 2vw;
+    }
+
+    .logo {
+        font-size: 4.5vw;
+        font-family: 'Shadows Into Light', serif;
+        border: 2px solid black;
+        padding: .75vw;
+        margin: 0;
+    }
+
+    .logo br {
+        display: none;
+    }
+    
+    nav {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        background: white;
+        padding-top: 8vh;
+        border-bottom: 2px solid black
+    }
+
+    nav a {
+        width: 100%;
+        font-size: 8vw;
+        font-family: 'PT Serif', serif;
+        line-height: 5vh;
+        text-align: center;
+        text-decoration: none;
+        padding: 1vw;
+        display: block;
+        color: black;
+    }
+    
+    .fa,
+    .fas,
+    .fa-bars,
+    .fas-times {
+        color: black;
+        font-size: 8vw;
+        margin: 2vw;
+        padding-right: 2vw;
+        z-index: 3;
+    }
+    
+    /*About Image Section*/
+    .about-image h1 {
+    font-size: 16vw;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 35vw;
+    position: relative;
+    z-index: 3;
+    }
+    /*------------*/
+    
+    /*Info Section*/
+    .info-contain {
+    margin-left: 0;
+    margin-right: 0;
+    border-left: none;
+    border-right: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    }
+    /*-----------*/
+    
+    /*Image Row*/
+    .image-contain img {
+    width: 25vw;
+    height: 25vw;
+    margin: 2vw;
+    border: 1px solid black;
+    }
+    /*---------*/
+    
+    /*Restaurant Section*/
+    .restaurant-contain h1 {
+    font-size: 5vw;
+    padding-bottom: 1vw;
+    }
+    
+    .restaurant-contain p {
+    padding: 1vw;
+    width: 70%;
+    margin: auto;
+    }
+
+    .quote {
+    font-style: italic;
+    padding: 1vw;
+    line-height: 5.5vw;
+    }
+    /*-------------*/
+    
+    /*Team Section*/
+    .team-title {
+    text-align: center;
+    font-size: 5vw;
+    padding-bottom: 3vw;
+    }
+    /*-----------*/
+    
+    /*Apply*/
+    .apply {
+    padding: 4vw;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    }
+    
+    .apply button {
+    padding: .25vw .5vw;
+    color: black;
+    background-color: beige;
+    font-size: 3.25vw;
+    cursor: pointer;
+    margin-top: 2vw;
+    }
+    /*-----*/
+    
+    /*Community*/
+    .community h1 {
+    font-size: 8vw;
+    text-shadow: 2px 2px black;
+    padding: 1vw;
+    }
+    
+    .community p {
+    font-size: 3.5vw;
+    text-align: center;
+    padding: 2vw;
+    width: 75%;
+    }
+    /*---------*/
+    
+    /*Footer Section*/
+    .footer {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        border-top: 3px solid black;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        background: white;
+    }
+    
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .social a {
+        color: black;
+        background: transparent;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 15px;
+        font-size: 8vw;
+    }
+    
+    .footer p {
+        display: none;
+    }
+    
+    .buffer {
+        width: 100%;
+        height: 8vh;
+    }
+}
+    /*------*/
+
+/*Tablet*/
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+    /*Header*/
+    .head-contain {
+        position: fixed;
+        z-index: 100;
+        background: white;
+        width: 100%;
+        height: 10vh;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-contain {
+        display: inline-block;
+        margin: 2vw;
+        padding-left: 2vw;
+    }
+
+    .logo {
+        font-size: 25px;
+        font-family: 'Shadows Into Light', serif;
+        border: 2px solid black;
+        padding: .75vw;
+        margin: 0;
+    }
+
+    .logo br {
+        display: none;
+    }
+    
+    nav {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        height: 30vh;
+        position: absolute;
+        background: white;
+        padding-top: 13vh;
+        border-bottom: 2px solid black;
+    }
+
+    nav a {
+        width: 100%;
+        font-size: 6vw;
+        font-family: 'PT Serif', serif;
+        line-height: 5vh;
+        text-align: center;
+        text-decoration: none;
+        padding: 1vw;
+        display: block;
+        color: black;
+    }
+    
+    .fa,
+    .fas,
+    .fa-bars,
+    .fas-times {
+        color: black;
+        font-size: 45px;
+        margin: 2vw;
+        padding-right: 2vw;
+        z-index: 3;
+    } 
+    
+    /*About Image*/
+    .about-image h1 {
+    font-size: 12vw;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 35vw;
+    position: relative;
+    z-index: 3;
+    }
+    /*-----------*/
+    
+    /*Image Section*/
+    .image-contain img {
+    width: 20vw;
+    height: 20vw;
+    margin: 1vw;
+    border: 1px solid black;
+    }
+    /*-------------*/
+    
+    /*Restauant Contain*/
+    .quote {
+    font-style: italic;
+    padding: 1vw;
+    line-height: 3.5vw;
+    }
+    
+    .restaurant-contain p {
+    padding: 1vw;
+    width: 70%;
+    margin: auto;
+    font-size: 2.5vw;
+    }
+    /*-----------*/
+    
+    /*Apply*/
+    .apply {
+    padding: 4vw;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 2.5vw;
+    }
+    
+    .apply button {
+    padding: .25vw .5vw;
+    color: black;
+    background-color: beige;
+    font-size: 2.25vw;
+    cursor: pointer;
+    margin-top: 2vw;
+    }
+    /*-----*/
+    
+    /*Community*/
+    .community h1 {
+    font-size: 6vw;
+    text-shadow: 2px 2px black;
+    padding: 1vw;
+    }
+    
+    .community p {
+    font-size: 3vw;
+    padding: 1vw;
+    text-align: center;
+    width: 85%;
+    }
+    /*---------*/
+    
+    /*Footer*/
+    .footer {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-top: 3px solid black;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        background: white;
+    }
+    
+    .social {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 30%;
+    }
+    
+    .social a {
+        color: black;
+        background: transparent;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 10px;
+        font-size: 5vw;
+    }
+    
+    .fa-facebook-f {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    
+    .footer p {
+        display: flex;
+        font-size: 2.5vw;
+    }
+    
+    .buffer {
+        width: 100%;
+        height: 8vh;
+    }
+}
+    /*------*/
+
+    /*Desktop*/
+@media screen and (min-width: 1001px) {
+    /*Header*/
+    .head-contain {
+        position: fixed;
+        z-index: 100;
+        background: white;
+        width: 100%;
+        height: 10vh;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-contain {
+        display: inline-block;
+        margin: 2vw;
+        padding-left: 2vw;
+    }
+
+    .logo {
+        font-size: 1.5vw;
+        font-family: 'Shadows Into Light', serif;
+        border: 2px solid black;
+        padding: .75vw;
+        margin: 0;
+        background: white;
+    }
+
+    .logo br {
+        display: none;
+    }
+    
+    nav {
+        display: flex;
+        float: right;
+        position: relative;
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        background: transparent;
+        padding: 0vh;
+        border-bottom: 0px solid transparent;
+        padding-right: 2vw;
+    }
+
+    nav a {
+        width: auto;
+        font-size: 1.5vw;
+        font-family: 'PT Serif', serif;
+        text-align: center;
+        text-decoration: none;
+        padding: 1vw;
+        color: black;
+    }
+    
+    .fa,
+    .fas,
+    .fa-bars,
+    .fas-times {
+        display: none;
+    }
+
+    /*Footer Section*/
+    .footer {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-top: 3px solid black;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        background: white;
+    }
+    
+    .social {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 30%;
+    }
+    
+    .social a {
+        color: black;
+        background: transparent;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        padding: 15px;
+        font-size: 2vw;
+    }
+    
+    .social a:hover {
+        transform: scale(1.1);
+    }
+    
+    .footer p {
+        display: flex;
+        font-size: 1.5vw;
+    }
+    
+    .buffer {
+        width: 100%;
+        height: 8vh;
+    }
+}
+    /*------*/
